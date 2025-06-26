@@ -4,7 +4,11 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     javascript = { "prettier" },
+    javascriptreact = { "prettier" },
     typescript = { "prettier" },
+    typescriptreact = { "prettier" },
+    markdown = { "prettier" },
+    python = {"ruff"}
   },
 
   format_on_save = {
