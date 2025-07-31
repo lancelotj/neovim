@@ -11,4 +11,5 @@ vim.opt.relativenumber = true
 
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldopen:append("jump")
 
