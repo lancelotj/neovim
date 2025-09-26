@@ -14,3 +14,17 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldopen = "all"
 vim.opt.foldlevel = 99
 
+if os.getenv("WSL_INTEROP") then
+  vim.g.clipboard = {
+    name = 'WslClipboard',
+    copy = {
+      ['+'] = 'clip.exe',
+      ['*'] = 'clip.exe',
+    },
+    paste = {
+      ['+'] = 'pwsh.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+      ['*'] = 'pwsh.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    },
+    cache_enabled = 0,
+  }
+end
