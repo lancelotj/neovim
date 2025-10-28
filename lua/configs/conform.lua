@@ -8,7 +8,8 @@ local options = {
     typescript = { "prettier" },
     typescriptreact = { "prettier" },
     markdown = { "prettier" },
-    python = {"ruff_format"}
+    python = {"ruff_format"},
+    json = {"prettier"},
   },
 
   format_on_save = {

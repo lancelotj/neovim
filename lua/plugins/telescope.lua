@@ -1,4 +1,5 @@
-require('telescope').setup{
+return {
+  "nvim-telescope/telescope.nvim",
   defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,
