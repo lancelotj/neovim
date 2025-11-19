@@ -13,6 +13,7 @@ vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldopen = "all"
 vim.opt.foldlevel = 99
+vim.opt.listchars = "tab:!·,trail:·"
 
 if os.getenv("WSL_INTEROP") then
   vim.g.clipboard = {
