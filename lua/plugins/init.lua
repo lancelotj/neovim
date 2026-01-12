@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -17,17 +17,24 @@ return {
   -- { import = "nvchad.blink.lazyspec" },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-        "html", "css", "typescript", "markdown", "markdown_inline", "python"
-  		},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "typescript",
+        "markdown",
+        "markdown_inline",
+        "python",
+      },
       lazy = false,
       highlight = {
         enabled = true,
       },
-  	},
+    },
   },
 
   {
@@ -36,14 +43,12 @@ return {
     opts = {
       scope = {
         enabled = true,
-      }
+      },
     },
   },
 
-  {
-    'sindrets/diffview.nvim',
-    cmd = "DiffviewOpen"
-  },
+  -- {
+  --   "sindrets/diffview.nvim",
+  --   cmd = "DiffviewOpen",
+  -- },
 }
-
-
