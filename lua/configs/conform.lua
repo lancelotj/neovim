@@ -1,15 +1,15 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { "prettier" },
-    html = { "prettier" },
-    javascript = { "prettier" },
-    javascriptreact = { "prettier" },
-    typescript = { "prettier" },
-    typescriptreact = { "prettier" },
-    markdown = { "prettier" },
-    python = {"ruff_format"},
-    json = {"prettier"},
+    css = { "oxfmt" },
+    html = { "oxfmt" },
+    javascript = { "oxfmt" },
+    javascriptreact = { "oxfmt" },
+    typescript = { "oxfmt" },
+    typescriptreact = { "oxfmt" },
+    markdown = { "oxfmt" },
+    python = { "ruff_format" },
+    json = { "prettier" },
   },
 
   format_on_save = function(bufnr)
