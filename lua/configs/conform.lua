@@ -1,4 +1,10 @@
 local options = {
+  formatters = {
+    oxfmt = {
+      -- Use prepend_args to add the config flag before other arguments
+      prepend_args = { "-c", vim.fn.expand "~/.config/oxfmt/global.json" },
+    },
+  },
   formatters_by_ft = {
     lua = { "stylua" },
     css = { "oxfmt" },
